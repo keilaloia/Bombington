@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 148318055}
   - component: {fileID: 148318054}
   - component: {fileID: 148318053}
+  - component: {fileID: 148318058}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -190,13 +191,29 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 148318052}
-  m_LocalRotation: {x: 0.22614829, y: -0, z: -0, w: 0.9740929}
-  m_LocalPosition: {x: 0, y: 4.38, z: -8.23}
+  m_LocalRotation: {x: 0.27189624, y: -0, z: -0, w: 0.9623266}
+  m_LocalPosition: {x: 0, y: 4.94, z: -10.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 26.141, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.554, y: 0, z: 0}
+--- !u!114 &148318058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148318052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851d915e73ff6004c94d87684eb77c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  shakeDuration: 0.3
+  shakeDecrease: 0.3
+  shakeForce: 5
+  doShake: 0
 --- !u!1 &306050094
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,8 +226,9 @@ GameObject:
   - component: {fileID: 306050097}
   - component: {fileID: 306050096}
   - component: {fileID: 306050095}
+  - component: {fileID: 306050100}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,6 +313,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &306050100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306050094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e8ffd33652acf4a8bcbf6752813333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 25
 --- !u!1 &338013265
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +483,7 @@ Transform:
   m_GameObject: {fileID: 1062237020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 0.1, z: 10}
+  m_LocalScale: {x: 15, y: 0.1, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
