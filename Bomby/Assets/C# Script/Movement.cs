@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
     private Rigidbody RB;
     private float horz;
     private float vert;
+    private float JumpHeight;
+
     private Vector3 Dir;
     private Collider Bounds;
     private CameraSingleTon cams;
@@ -85,10 +87,11 @@ public class Movement : MonoBehaviour
     bool didPound = false;
     void JumpyJump()
     {
+        JumpHeight = 10f;
 
         if(Input.GetKey(KeyCode.Space)&& isGrounded)
         {
-            RB.velocity = new Vector3(RB.velocity.x, 6.5f, RB.velocity.z);
+            RB.velocity = new Vector3(RB.velocity.x, JumpHeight, RB.velocity.z);
             Debug.Log("JumpPressed");
         }
 
@@ -104,14 +107,14 @@ public class Movement : MonoBehaviour
             cams.doShake = true;
             didPound = false;
         }
+
+        if(!isGrounded)
+        {
+            RB.AddForce(Physics.gravity * RB.mass * 2f);
+            
+        }
     }
 
-    //public bool IsGrounded()
-    //{
-    //    Vector3 startPoint = transform.position - (Vector3.up * Bounds.bounds.extents.y * .9f);
-    //    Vector3 endPoint = startPoint - (Vector3.up * Bounds.bounds.extents.y * .2f);
-    //    Debug.DrawLine(startPoint, endPoint, Color.red);
-    //    return Physics.Raycast(startPoint, -Vector3.up, Bounds.bounds.extents.y * .2f);
-    //}
+   
 
 }
