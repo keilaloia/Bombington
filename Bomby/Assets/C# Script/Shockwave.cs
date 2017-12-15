@@ -31,7 +31,7 @@ public class Shockwave : MonoBehaviour {
         Rigidbody PlayerRB = collision.collider.GetComponent<Rigidbody>();
 
         Vector3 Dir = PlayerRB.position - transform.parent.position;
-        Debug.Log(Dir);
+        //Debug.Log(Dir);
         PlayerRB.position += (Dir.normalized * 2) * Time.deltaTime * 2;
  
 
