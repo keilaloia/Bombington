@@ -683,10 +683,10 @@ RectTransform:
   m_Father: {fileID: 382812562}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -119.999985, y: 100.00002}
-  m_SizeDelta: {x: 240, y: 200}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 120, y: -106.04721}
+  m_SizeDelta: {x: 200, y: 35.96853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &308044925
 MonoBehaviour:
@@ -877,10 +877,10 @@ RectTransform:
   m_Father: {fileID: 1848433928}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -119.999985, y: 100.00002}
-  m_SizeDelta: {x: 240, y: 200}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 120, y: -125.060844}
+  m_SizeDelta: {x: 200, y: 23.292767}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341018687
 MonoBehaviour:
@@ -1557,10 +1557,10 @@ RectTransform:
   m_Father: {fileID: 1848433928}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015258789, y: -55}
-  m_SizeDelta: {x: 240, y: 90}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 120, y: -168.3536}
+  m_SizeDelta: {x: 200, y: 23.292767}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &554050850
 MonoBehaviour:
@@ -2257,10 +2257,10 @@ RectTransform:
   m_Father: {fileID: 1848433928}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -461.81183, y: -105.00011}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 120, y: -33.353615}
+  m_SizeDelta: {x: 200, y: 26.70723}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000128497
 MonoBehaviour:
@@ -2715,10 +2715,10 @@ RectTransform:
   m_Father: {fileID: 382812562}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015258789, y: -55}
-  m_SizeDelta: {x: 240, y: 90}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 120, y: -162.01573}
+  m_SizeDelta: {x: 200, y: 35.96853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1152252520
 MonoBehaviour:
@@ -3205,10 +3205,10 @@ RectTransform:
   m_Father: {fileID: 1848433928}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 56.354866}
-  m_SizeDelta: {x: 200, y: 47.290314}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 120, y: -80.060844}
+  m_SizeDelta: {x: 200, y: 26.70723}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1537333405
 MonoBehaviour:
@@ -3572,10 +3572,10 @@ RectTransform:
   m_Father: {fileID: 382812562}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -461.81183, y: -105.00011}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 120, y: -44.03147}
+  m_SizeDelta: {x: 200, y: 48.06294}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742708399
 MonoBehaviour:
@@ -3699,15 +3699,30 @@ GameObject:
 --- !u!114 &1823468100
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114158301836417760, guid: c07801c0c10d53541b9b63c916cb4c7c,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1823468099}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 27d56d5d65171e2488f0b5a7ec561527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HostMenu: {fileID: 382812561}
+  ClientMenu: {fileID: 1848433927}
+  HostButton: {fileID: 567192742}
+  JoinButton: {fileID: 680126645}
+  QuitButton: {fileID: 916496423}
+  HostPort: {fileID: 1742708399}
+  HostStart: {fileID: 308044925}
+  HBack: {fileID: 1152252520}
+  ClientAddress: {fileID: 1000128497}
+  ClientPort: {fileID: 1537333405}
+  ClientStart: {fileID: 341018687}
+  CBack: {fileID: 554050850}
+  PlayerName: {fileID: 1455791525}
+  Teams: {fileID: 1982568180}
+  ServerAuthoritativePlayer: {fileID: 0}
+  ClientAuthoritativePlayer: {fileID: 0}
 --- !u!114 &1823468101
 MonoBehaviour:
   m_ObjectHideFlags: 0

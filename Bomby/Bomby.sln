@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomby", "Bomby.csproj", "{CDE9CDB8-CF44-23B1-C6D7-2BCD6A227C2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomby.Editor", "Bomby.Editor.csproj", "{DC53CCAC-C2F4-07AF-772B-2D7276BBCC5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{CDE9CDB8-CF44-23B1-C6D7-2BCD6A227C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDE9CDB8-CF44-23B1-C6D7-2BCD6A227C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDE9CDB8-CF44-23B1-C6D7-2BCD6A227C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC53CCAC-C2F4-07AF-772B-2D7276BBCC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC53CCAC-C2F4-07AF-772B-2D7276BBCC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC53CCAC-C2F4-07AF-772B-2D7276BBCC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC53CCAC-C2F4-07AF-772B-2D7276BBCC5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
