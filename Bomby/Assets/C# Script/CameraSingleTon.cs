@@ -18,7 +18,7 @@ public class CameraSingleTon : MonoBehaviour {
     public float shakeDuration;
     public float shakeDecrease;
     public float shakeForce;
-
+    private float currentshakeDuration;
     public bool doShake;
 
     Vector3 originalPos;
@@ -34,6 +34,8 @@ public class CameraSingleTon : MonoBehaviour {
     }
     void Start()
     {
+        currentshakeDuration = shakeDuration;
+
         doShake = false;
         camera = GetComponent<Camera>();
         originalPos = camera.transform.localPosition;
@@ -41,23 +43,28 @@ public class CameraSingleTon : MonoBehaviour {
 
     public void cameraShake()
     {
+
+        Vector3 startRot = transform.rotation.eulerAngles;
         if(doShake)
         {
             if (shakeDuration > 0)
             {
                 Vector3 rando = Random.insideUnitCircle * shakeForce;
-                camera.transform.localPosition = Vector3.Lerp(camera.transform.localPosition, camera.transform.localPosition + rando, Time.deltaTime * shakeDecrease);
+                transform.Rotate(1 * rando.y, 0, 0);
                 shakeDuration -= Time.deltaTime * shakeDecrease;
+
+
             }
             else
             {
                 doShake = false;
-
-                shakeDuration = 1;
+                transform.rotation = Quaternion.Euler(startRot);
+                shakeDuration = currentshakeDuration;
                 camera.transform.localPosition = originalPos;
             }
         }
-        
+       // transform.rotation = startRot;
+
     }
     void Update()
     {
