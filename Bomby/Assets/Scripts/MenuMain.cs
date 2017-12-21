@@ -37,7 +37,7 @@ public class MenuMain : MonoBehaviour {
 
     void SetupPlayerPrefab()
     {
-     //   NetworkManager.singleton.playerPrefab = GameSettings.serverAuthoritative ? ServerAuthoritativePlayer : ClientAuthoritativePlayer;
+        NetworkManager.singleton.playerPrefab = GameSettings.serverAuthoritative ? ServerAuthoritativePlayer : ClientAuthoritativePlayer;
     }
 
     void SetupMainMenu()

@@ -74,7 +74,7 @@ public class Player : NetworkBehaviour {
         {
             PlayerManager.localPlayer = this;
 
-            SetLocalDelegetes();
+            //SetLocalDelegetes();
 
             InitializeTeam();
         }
@@ -106,10 +106,51 @@ public class Player : NetworkBehaviour {
             switch (t)
             {
                 case Team.P1:
-                    renderer.material = 
+                    renderer.material = material1;
+                    break;
+
+                case Team.P2:
+                    renderer.material = material2;
+                    break;
+
+                case Team.P3:
+                    renderer.material = material3;
+                    break;
+
+                case Team.P4:
+                    renderer.material = material4;
+                    break;
             }
         }
     }
 
+    void InitializeTeam()
+    {
+        CmdSetTeam((int)UserSettings.team);
+    }
+    void AddToPlayerList()
+    {
+        PlayerManager.players.Add(this);
+    }
+
+    void RemoveFromPlayerList()
+    { PlayerManager.players.Remove(this); }
+
+
+    void LocalUpdate()
+    { ProcessInput(); }
+
+    void RemoteUpdate()
+    { }
+
+    [Command]
+    void CmdSetTeam(int t)
+    { team = (Team)t; }
+
+
+    void ProcessInput()
+    {
+        Movement();
+    }
 
 }
