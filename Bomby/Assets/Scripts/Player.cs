@@ -74,7 +74,7 @@ public class Player : NetworkBehaviour {
         {
             PlayerManager.localPlayer = this;
 
-            //SetLocalDelegetes();
+            SetLocalDelegetes();
 
             InitializeTeam();
         }
@@ -85,13 +85,14 @@ public class Player : NetworkBehaviour {
         }
     }
 
-    void SetLocalDelegates()
+    void SetLocalDelegetes()
     {
         NetUpdate += LocalUpdate;
 
-        //if(GameSettings.serverAuthoritative)
-        //{
-        //}
+        if (GameSettings.serverAuthoritative)
+        {
+
+        }
     }
 
     void SetRemoteDelegates()
