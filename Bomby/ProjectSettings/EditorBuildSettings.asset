@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ServerInfo.unity
     guid: 7d7b9694e4919da44bad0ecd54ed68f5
+  - enabled: 1
+    path: Assets/Scenes/Keil.unity
+    guid: 2069bfe8bc82cf543b243919ebd1764a
