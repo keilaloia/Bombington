@@ -47,12 +47,16 @@ public class Radius_Drop : NetworkBehaviour {
     
     void CrapSpawner()
     {
-        Timer -= Time.deltaTime;
-        if (Timer <= 0)
+        if(PlayerManager.players.Count > 1)
         {
-            CmdSpawnBomb();
-            Timer = crapTime;
+            Timer -= Time.deltaTime;
+            if (Timer <= 0)
+            {
+                CmdSpawnBomb();
+                Timer = crapTime;
+            }
         }
+      
     }
 
 

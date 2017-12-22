@@ -11,7 +11,7 @@ public class NetworkTimer : NetworkBehaviour {
 
     [HideInInspector]
     [SyncVar]
-    public float matchTime = 150;
+    public float matchTime = 120;
 
     private float minutesPassed
     {
