@@ -10,8 +10,6 @@ public class WinManager : NetworkBehaviour {
     public List<Player> players;
     public Player[] findPlayers;
 
-    //[SyncVar]
-    string example;
     public Text winner;
     public GameObject menuState;
     private NetworkTimer matchtime;
@@ -36,8 +34,10 @@ public class WinManager : NetworkBehaviour {
     }
 
 
+    [ServerCallback]
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("we touched something");
         if(other.tag == "Player")
         {
             var playerThatFell = other.GetComponent<Player>();
@@ -49,25 +49,29 @@ public class WinManager : NetworkBehaviour {
     }
 
 	// Update is called once per frame
+    [ServerCallback]
 	void Update ()
     {
-        winner.text = example;
+        //winner.text = example;
         //matchtime
        // matchtime = gameObject.GetComponent<NetworkTimer>().matchTime;
-        Debug.Log(matchtime.matchTime);
-        // checkwinner();
+        //Debug.Log(matchtime.matchTime);
     }
 
     void checkwinner()
     {
         if(matchtime.matchTime <= 0 || players.Count == 1)
         {
-            
-                winner.text = players[0].GetComponent<Player>().name.ToString() + " Wins!";
-                menuState.SetActive(true);
-                Debug.Log("win");
-            
+            RpcDeclareWinner(players[0].GetComponent<Player>().name.ToString() + " Wins!");
         }
         
+    }
+
+    [ClientRpc]
+    void RpcDeclareWinner(string msg)
+    {
+        winner.text = msg;
+        menuState.SetActive(true);
+        Debug.Log("win");
     }
 }
