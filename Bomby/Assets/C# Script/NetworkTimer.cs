@@ -10,7 +10,7 @@ public class NetworkTimer : NetworkBehaviour {
     public Text timerText;
 
     [SyncVar]
-    private float matchTime = 0;
+    private float matchTime = 120;
 
     private float minutesPassed
     {
@@ -49,7 +49,7 @@ public class NetworkTimer : NetworkBehaviour {
     {
         if (PlayerManager.localPlayer.isServer)
         {
-            matchTime += Time.deltaTime;
+            matchTime -= Time.deltaTime;
         }
     }
 }

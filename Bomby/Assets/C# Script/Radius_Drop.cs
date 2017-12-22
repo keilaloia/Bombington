@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class Radius_Drop : MonoBehaviour {
 
@@ -32,6 +33,7 @@ public class Radius_Drop : MonoBehaviour {
         GameObject spawnBaby = Instantiate(BombPrefab);
         Rigidbody rb = spawnBaby.GetComponent<Rigidbody>();
         spawnBaby.transform.position = transform.position + CrapRange;
+        NetworkServer.Spawn(spawnBaby);
 
 
 

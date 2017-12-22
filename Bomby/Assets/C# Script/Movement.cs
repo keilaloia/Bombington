@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Movement : MonoBehaviour
+public class Movement : NetworkBehaviour
 {
-   
+
     public float speed;
     private Rigidbody RB;
     private float horz;
@@ -14,6 +15,9 @@ public class Movement : MonoBehaviour
     private Vector3 Dir;
     private Collider Bounds;
     private CameraSingleTon cams;
+
+    [SyncVar]
+    bool isStunned;
 
     public bool isGrounded
     {
@@ -34,13 +38,16 @@ public class Movement : MonoBehaviour
         cams = CameraSingleTon.instance.GetComponent<CameraSingleTon>();
         
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate ()
+
+    // Update is called once per frame
+    void FixedUpdate()
     {
-        Move();
-        JumpyJump();
-	}
+        if (!isStunned)
+        {
+            Move();
+            JumpyJump();
+        }
+    }
 
     void Move()
     {

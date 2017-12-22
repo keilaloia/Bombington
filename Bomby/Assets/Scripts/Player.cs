@@ -131,6 +131,11 @@ public class Player : NetworkBehaviour {
     }
     void AddToPlayerList()
     {
+        if (isLocalPlayer)
+        {
+           PlayerManager.localPlayer = this;
+
+        }
         PlayerManager.players.Add(this);
     }
 
