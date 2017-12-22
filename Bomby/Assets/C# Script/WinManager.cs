@@ -14,7 +14,15 @@ public class WinManager : NetworkBehaviour {
     string example;
     public Text winner;
     public GameObject menuState;
-    // Use this for initialization
+    private NetworkTimer matchtime;
+    // Use  this for initialization
+
+     
+    void Awake()
+    {
+        matchtime = FindObjectOfType<NetworkTimer>();
+        gameObject.SetActive(true);
+    }
 	void Start ()
     {
         players = new List<Player>();
@@ -22,10 +30,11 @@ public class WinManager : NetworkBehaviour {
         for(int i =0; i < findPlayers.Length; i++)
         {
             players.Add(findPlayers[i]);
+            players[i].gameObject.name = "P" + (i+1).ToString();
         }
-       // BC = GetComponent<BoxCollider>();
-	}
-	
+      
+    }
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -33,24 +42,32 @@ public class WinManager : NetworkBehaviour {
         {
             var playerThatFell = other.GetComponent<Player>();
             players.Remove(playerThatFell);
+            Debug.Log("deleted");
             checkwinner();
         }
 
     }
 
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         winner.text = example;
-	}
+        //matchtime
+       // matchtime = gameObject.GetComponent<NetworkTimer>().matchTime;
+        Debug.Log(matchtime.matchTime);
+        // checkwinner();
+    }
 
     void checkwinner()
     {
-
-        if(players.Count == 1)
+        if(matchtime.matchTime <= 0 || players.Count == 1)
         {
-            winner.text = players[0].GetComponent<Player>().name.ToString() + "Wins!";
-            menuState.SetActive(true);
-            Debug.Log("win");
+            
+                winner.text = players[0].GetComponent<Player>().name.ToString() + " Wins!";
+                menuState.SetActive(true);
+                Debug.Log("win");
+            
         }
+        
     }
 }

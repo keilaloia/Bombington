@@ -156,7 +156,12 @@ public class Player : NetworkBehaviour {
 
     void ProcessInput()
     {
-        Movement();
+        if (Movement != null)
+        {
+            Movement();
+
+        }
+
 
     }
 
