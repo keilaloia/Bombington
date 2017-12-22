@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class BombDrop : MonoBehaviour {
+
+public class BombDrop : NetworkBehaviour {
 
     private Rigidbody RB;
 
@@ -16,18 +18,24 @@ public class BombDrop : MonoBehaviour {
 
 
     // Update is called once per frame
-    void Update () {
+    void Update ()
+    {
 		
 	}
 
+    
+     
+    
 
-    void OnCollisionEnter(Collision collision)
+    void  OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Ground")
         {
-            Destroy(RB.gameObject);
             GameObject Ringading = Instantiate(Ring);
             Ringading.transform.position = transform.position;
+            NetworkServer.Spawn(Ringading);
+
+            Destroy(RB.gameObject);
         }
     }
 }

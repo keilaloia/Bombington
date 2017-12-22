@@ -21,6 +21,7 @@ public class Radius_Drop : NetworkBehaviour {
     }
     void Update ()
     {
+        
         CrapSpawner();
     }
 
@@ -29,15 +30,15 @@ public class Radius_Drop : NetworkBehaviour {
         Gizmos.DrawWireSphere(transform.position, BombRadius);
     }
 
-    void SpawnBomb()
+    [Command]
+    void CmdSpawnBomb()
     {
         CrapRange = new Vector3(Random.Range(-6f, 6f), 0, Random.Range(-6f, 6f));
         GameObject spawnBaby = Instantiate(BombPrefab);
         Rigidbody rb = spawnBaby.GetComponent<Rigidbody>();
         spawnBaby.transform.position = transform.position + CrapRange;
+
         NetworkServer.Spawn(spawnBaby);
-
-
 
         //Rigidbody clone;
         //clone = Instantiate(BombPrefab, transform.position * CrapRange, transform.rotation).GetComponent<Rigidbody>();
@@ -49,10 +50,12 @@ public class Radius_Drop : NetworkBehaviour {
         Timer -= Time.deltaTime;
         if (Timer <= 0)
         {
-            SpawnBomb();
+            CmdSpawnBomb();
             Timer = crapTime;
         }
     }
 
-   
+
+
+
 }

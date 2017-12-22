@@ -2918,7 +2918,8 @@ MonoBehaviour:
   m_OfflineScene: ServerInfo
   m_OnlineScene: Keil
   m_SpawnPrefabs:
-  - {fileID: 0}
+  - {fileID: 1851655279943984, guid: f67e575985ede8847b6864837b1a3c95, type: 2}
+  - {fileID: 1831612431507312, guid: 9b811050aeca6e84daf42c7dcf1d1415, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:

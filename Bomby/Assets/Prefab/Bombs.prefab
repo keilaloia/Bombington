@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 23422523797218906}
   - component: {fileID: 54114099709892172}
   - component: {fileID: 114483188876256482}
+  - component: {fileID: 114546836595506804}
+  - component: {fileID: 114792863212234172}
   m_Layer: 0
   m_Name: Bombs
   m_TagString: Untagged
@@ -110,6 +112,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ring: {fileID: 1831612431507312, guid: 9b811050aeca6e84daf42c7dcf1d1415, type: 2}
+--- !u!114 &114546836595506804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1851655279943984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 246
+    i1: 126
+    i2: 87
+    i3: 89
+    i4: 133
+    i5: 237
+    i6: 232
+    i7: 132
+    i8: 123
+    i9: 104
+    i10: 100
+    i11: 131
+    i12: 123
+    i13: 26
+    i14: 60
+    i15: 149
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114792863212234172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1851655279943984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!135 &135936084374018622
 SphereCollider:
   m_ObjectHideFlags: 1
