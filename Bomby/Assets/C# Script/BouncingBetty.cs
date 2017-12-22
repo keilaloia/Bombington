@@ -9,9 +9,9 @@ public class BouncingBetty : MonoBehaviour {
     public Material stun;
     public Material[] Mats;
     //public Material otherPlayer;
-    private Renderer rend; 
+    private Renderer rend;
 
-    private float crapTime = 2;
+    private float crapTime = .7f;
     private float Timer;
     private bool changedmat;
     private Movement Movement;
