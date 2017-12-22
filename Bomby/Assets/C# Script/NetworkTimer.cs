@@ -9,7 +9,7 @@ public class NetworkTimer : NetworkBehaviour {
     
     public Text timerText;
 
-    [HideInInspector]
+ 
     [SyncVar]
     public float matchTime = 120;
 

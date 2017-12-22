@@ -763,7 +763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 119283609}
-  matchTime: 150
+  matchTime: 120
 --- !u!1 &148318052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2920,8 +2920,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 454970989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.72, z: 0}
-  m_LocalScale: {x: 40.96902, y: 5.4868975, z: 34.60811}
+  m_LocalPosition: {x: 0, y: -5.72, z: 7}
+  m_LocalScale: {x: 132.63216, y: 5.4868975, z: 90.89907}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -11120,7 +11120,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 00:00
 --- !u!222 &1490244202
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12169,6 +12169,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1607195720}
+  - component: {fileID: 1607195722}
+  - component: {fileID: 1607195721}
   m_Layer: 0
   m_Name: menusweird
   m_TagString: Untagged
@@ -12189,6 +12191,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607195721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607195719}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a2c768fcb3e2343a6d2148f78039a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  matchTime: 120
+--- !u!114 &1607195722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607195719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1611263051
 GameObject:
   m_ObjectHideFlags: 0
