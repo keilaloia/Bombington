@@ -26,7 +26,11 @@ GameObject:
   - component: {fileID: 114215912843447090}
   - component: {fileID: 114008665257518136}
   - component: {fileID: 114996676328741374}
+<<<<<<< HEAD
   - component: {fileID: 114624747953498908}
+=======
+  - component: {fileID: 114737470650328736}
+>>>>>>> master
   m_Layer: 0
   m_Name: Client Player
   m_TagString: Player
@@ -145,7 +149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
+<<<<<<< HEAD
 --- !u!114 &114624747953498908
+=======
+--- !u!114 &114737470650328736
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -157,10 +165,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
+<<<<<<< HEAD
   material1: {fileID: 0}
   material2: {fileID: 0}
   material3: {fileID: 0}
   material4: {fileID: 0}
+=======
+  material1: {fileID: 2100000, guid: 930cb539e240152458b94b4b17c1ac0b, type: 2}
+  material2: {fileID: 2100000, guid: e2a50e2ef4b4d3140916a4d9f7d2b808, type: 2}
+  material3: {fileID: 2100000, guid: 569b33740c12a7d48b0c144b86a325f1, type: 2}
+  material4: {fileID: 2100000, guid: f77aa3d5413882b42a3a414413df207f, type: 2}
+>>>>>>> master
 --- !u!114 &114996676328741374
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Radius_Drop : MonoBehaviour {
+public class Radius_Drop : NetworkBehaviour {
 
     public float BombRadius;
     public GameObject BombPrefab;
     private float crapTime = .75f;
     private float Timer;
+    [SyncVar]
     private Vector3 CrapRange;
+
 
     // Update is called once per frame
     void Awake()
