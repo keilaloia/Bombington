@@ -3835,7 +3835,7 @@ MonoBehaviour:
   Teams: {fileID: 1982568180}
   ServerAuthoritativePlayer: {fileID: 1671516308892226, guid: aa1eb650e94f1e5428f57026a698064b,
     type: 2}
-  ClientAuthoritativePlayer: {fileID: 1947300197541380, guid: 791f3060c89a70c4fa0ddea661010120,
+  ClientAuthoritativePlayer: {fileID: 1783801448149336, guid: 9063d36d7d5e9474ebfe1bd826eb650c,
     type: 2}
 --- !u!114 &1823468101
 MonoBehaviour:
