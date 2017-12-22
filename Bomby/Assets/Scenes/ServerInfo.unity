@@ -3491,7 +3491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Solo
+  m_Text: Yellow
 --- !u!222 &1600237809
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4277,9 +4277,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Solo
+    - m_Text: Yellow
       m_Image: {fileID: 0}
-    - m_Text: Blue
+    - m_Text: Orange
+      m_Image: {fileID: 0}
+    - m_Text: Pink
       m_Image: {fileID: 0}
     - m_Text: Red
       m_Image: {fileID: 0}
