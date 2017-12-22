@@ -16,8 +16,9 @@ public class Movement : NetworkBehaviour
     private Collider Bounds;
     private CameraSingleTon cams;
 
+    [HideInInspector]
     [SyncVar]
-    bool isStunned;
+    public bool isStunned;
 
     public bool isGrounded
     {

@@ -26,9 +26,12 @@ GameObject:
   - component: {fileID: 114490732567540334}
   - component: {fileID: 114419659353569622}
   - component: {fileID: 114132652558558158}
+  - component: {fileID: 114094864027013950}
+  - component: {fileID: 114662146108131638}
+  - component: {fileID: 65140034897574074}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +103,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &65140034897574074
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783801448149336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.36733437, y: 0.00999999, z: 0.28900075}
+  m_Center: {x: 0.009625047, y: 0.5, z: 0.011374176}
+--- !u!114 &114094864027013950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783801448149336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6311726e4125b6243b28eba431cf290a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  team: 0
+  material1: {fileID: 2100000, guid: 569b33740c12a7d48b0c144b86a325f1, type: 2}
+  material2: {fileID: 2100000, guid: 930cb539e240152458b94b4b17c1ac0b, type: 2}
+  material3: {fileID: 2100000, guid: f77aa3d5413882b42a3a414413df207f, type: 2}
+  material4: {fileID: 2100000, guid: e2a50e2ef4b4d3140916a4d9f7d2b808, type: 2}
 --- !u!114 &114132652558558158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,6 +196,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
+  isStunned: 0
+--- !u!114 &114662146108131638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783801448149336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e1fd719b9ea7f49b9feefd1c4ea963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouncyCollider: {fileID: 65140034897574074}
+  Bounciness: 10
+  stun: {fileID: 2100000, guid: 79cd9c2e352709d4cab08cb4a390d8a1, type: 2}
+  Mats: []
 --- !u!135 &135368604989507388
 SphereCollider:
   m_ObjectHideFlags: 1

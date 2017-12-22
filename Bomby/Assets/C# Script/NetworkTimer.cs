@@ -9,8 +9,9 @@ public class NetworkTimer : NetworkBehaviour {
     
     public Text timerText;
 
+    [HideInInspector]
     [SyncVar]
-    private float matchTime = 120;
+    public float matchTime = 150;
 
     private float minutesPassed
     {
@@ -47,7 +48,12 @@ public class NetworkTimer : NetworkBehaviour {
     }
     void updateTimer()
     {
-        if (PlayerManager.localPlayer.isServer)
+        //(
+
+
+
+        //Manager.localPlayer.isServer)
+        if (PlayerManager.players.Count > 1)
         {
             matchTime -= Time.deltaTime;
         }
