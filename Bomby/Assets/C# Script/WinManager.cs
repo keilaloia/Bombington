@@ -24,12 +24,7 @@ public class WinManager : NetworkBehaviour {
 	void Start ()
     {
         players = new List<Player>();
-        findPlayers = FindObjectsOfType<Player>();
-        for(int i =0; i < findPlayers.Length; i++)
-        {
-            players.Add(findPlayers[i]);
-            players[i].gameObject.name = "P" + (i+1).ToString();
-        }
+
       
     }
 
@@ -52,9 +47,17 @@ public class WinManager : NetworkBehaviour {
     [ServerCallback]
 	void Update ()
     {
+        players.Clear();
+        findPlayers = FindObjectsOfType<Player>();
+        for (int i = 0; i < findPlayers.Length; i++)
+        {
+            players.Add(findPlayers[i]);
+            players[i].gameObject.name = "P" + (i + 1).ToString();
+        }
+
         //winner.text = example;
         //matchtime
-       // matchtime = gameObject.GetComponent<NetworkTimer>().matchTime;
+        // matchtime = gameObject.GetComponent<NetworkTimer>().matchTime;
         //Debug.Log(matchtime.matchTime);
     }
 
@@ -63,6 +66,10 @@ public class WinManager : NetworkBehaviour {
         if(matchtime.matchTime <= 0 || players.Count == 1)
         {
             RpcDeclareWinner(players[0].GetComponent<Player>().name.ToString() + " Wins!");
+
+            winner.text = players[0].GetComponent<Player>().name.ToString() + " Wins!";
+            menuState.SetActive(true);
+            Debug.Log("win");
         }
         
     }
